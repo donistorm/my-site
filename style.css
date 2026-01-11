@@ -10,6 +10,17 @@ body {
     font-family: ui-sans-serif, -apple-system, system-ui, Segoe UI,
                  Helvetica, Apple Color Emoji, Arial, sans-serif,
                  Segoe UI Emoji, Segoe UI Symbol;
+    /* Change selection colors */
+    ::selection {
+        background-color: #ececec;; /* highlight color */
+        color: rgb(29, 29, 29);           /* text color while highlighted */
+    }
+    
+    /* Optional: for Firefox compatibility */
+    ::-moz-selection {
+        background-color: #ececec;;
+        color: rgb(29, 29, 29);
+    }
 
     color: #ececec;
     min-height: 100vh;
